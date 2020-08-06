@@ -4,7 +4,23 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
-import "./App.css";
+
+// const theme = createMuiTheme({
+//   palette: {
+//     primary: {
+//       light: "#f05545",
+//       main: "#b71c1c",
+//       dark: "#7f0000",
+//       contrastText: "#ffffff",
+//     },
+//     secondary: {
+//       light: "#62727b",
+//       main: "#37474f",
+//       dark: "#102027",
+//       contrastText: "#ffffff",
+//     },
+//   },
+// });
 
 function App() {
   return (
