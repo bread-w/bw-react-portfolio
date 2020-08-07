@@ -41,11 +41,7 @@ export default function TitlebarGridList() {
               title={tile.title}
               subtitle={<span>{tile.info}</span>}
               actionIcon={
-                <a
-                  href={tile.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href={tile.github} target="_blank" rel="noopener noreferrer">
                   <IconButton
                     aria-label={`info about ${tile.title}`}
                     className={classes.icon}
@@ -69,12 +65,14 @@ export default function TitlebarGridList() {
               title={tile.title}
               subtitle={<span>{tile.info}</span>}
               actionIcon={
-                <IconButton
-                  aria-label={`info about ${tile.title}`}
-                  className={classes.icon}
-                >
-                  <GitHubIcon />
-                </IconButton>
+                <a href={tile.github} target="_blank" rel="noopener noreferrer">
+                  <IconButton
+                    aria-label={`info about ${tile.title}`}
+                    className={classes.icon}
+                  >
+                    <GitHubIcon />
+                  </IconButton>
+                </a>
               }
             />
           </GridListTile>
