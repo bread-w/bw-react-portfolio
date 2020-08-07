@@ -6,6 +6,7 @@ import GridListTileBar from "@material-ui/core/GridListTileBar";
 import ListSubheader from "@material-ui/core/ListSubheader";
 import IconButton from "@material-ui/core/IconButton";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import LanguageIcon from "@material-ui/icons/Language";
 import tileData from "./TileData";
 import tileDataCont from "./TileDataCont";
 
@@ -41,14 +42,27 @@ export default function TitlebarGridList() {
               title={tile.title}
               subtitle={<span>{tile.info}</span>}
               actionIcon={
-                <a href={tile.github} target="_blank" rel="noopener noreferrer">
-                  <IconButton
-                    aria-label={`info about ${tile.title}`}
-                    className={classes.icon}
+                <IconButton
+                  aria-label={`info about ${tile.title}`}
+                  className={classes.icon}
+                >
+                  <a
+                    href={tile.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{color: 'white'}}
+                  >
+                  <LanguageIcon />
+                  </a>
+                  <a
+                    href={tile.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{color: 'white'}}
                   >
                     <GitHubIcon />
-                  </IconButton>
-                </a>
+                  </a>
+                </IconButton>
               }
             />
           </GridListTile>
@@ -65,14 +79,27 @@ export default function TitlebarGridList() {
               title={tile.title}
               subtitle={<span>{tile.info}</span>}
               actionIcon={
-                <a href={tile.github} target="_blank" rel="noopener noreferrer">
-                  <IconButton
-                    aria-label={`info about ${tile.title}`}
-                    className={classes.icon}
+                <IconButton
+                  aria-label={`info about ${tile.title}`}
+                  className={classes.icon}
+                >
+                  <a
+                    href={tile.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{color: 'white'}}
+                  >
+                  <LanguageIcon />
+                  </a>
+                  <a
+                    href={tile.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{color: 'white'}}
                   >
                     <GitHubIcon />
-                  </IconButton>
-                </a>
+                  </a>
+                </IconButton>
               }
             />
           </GridListTile>
