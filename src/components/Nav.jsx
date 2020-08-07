@@ -41,10 +41,14 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ButtonAppBar() {
   const classes = useStyles();
-
+  const navBar = {
+    color: "white",
+    float: "right",
+    textDecoration: "underline",
+  };
   return (
     <ThemeProvider theme={theme}>
-      <div className="navBar">
+      <div>
         <AppBar position="static" color="primary">
           <Toolbar>
             <Typography variant="h3" className={classes.title}>
@@ -52,17 +56,17 @@ export default function ButtonAppBar() {
             </Typography>
             <Typography variant="h6" className={classes.title}>
               <Link to="/">
-                <Button className="buttonLink">About</Button>
+                <Button style={navBar}>About</Button>
               </Link>
             </Typography>
             <Typography variant="h6" className={classes.title}>
               <Link to="/Portfolio">
-                <Button className="buttonLink">Portfolio</Button>
+                <Button style={navBar}>Portfolio</Button>
               </Link>
             </Typography>
             <Typography variant="h6" className={classes.title}>
               <Link to="/Contact">
-                <Button className="buttonLink">Contact</Button>
+                <Button style={navBar}>Contact</Button>
               </Link>
             </Typography>
             <div>
@@ -71,7 +75,7 @@ export default function ButtonAppBar() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button className="buttonLink">
+                <Button style={navBar}>
                   <GitHubIcon fontSize="large" />
                 </Button>
               </a>
@@ -82,7 +86,7 @@ export default function ButtonAppBar() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button className="buttonLink">
+                <Button style={navBar}>
                   <LinkedInIcon fontSize="large" />
                 </Button>
               </a>
