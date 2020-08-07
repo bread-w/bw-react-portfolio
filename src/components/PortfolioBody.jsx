@@ -1,27 +1,27 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import GridList from '@material-ui/core/GridList';
-import GridListTile from '@material-ui/core/GridListTile';
-import GridListTileBar from '@material-ui/core/GridListTileBar';
-import ListSubheader from '@material-ui/core/ListSubheader';
-import IconButton from '@material-ui/core/IconButton';
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import GridList from "@material-ui/core/GridList";
+import GridListTile from "@material-ui/core/GridListTile";
+import GridListTileBar from "@material-ui/core/GridListTileBar";
+import ListSubheader from "@material-ui/core/ListSubheader";
+import IconButton from "@material-ui/core/IconButton";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import tileData from './TileData';
-import tileDataCont from './TileDataCont';
+import tileData from "./TileData";
+import tileDataCont from "./TileDataCont";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'space-around',
-    overflow: 'hidden',
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "space-around",
+    overflow: "hidden",
   },
   gridList: {
     width: 500,
     height: 450,
   },
   icon: {
-    color: 'rgba(255, 255, 255, 0.54)',
+    color: "rgba(255, 255, 255, 0.54)",
   },
 }));
 
@@ -31,7 +31,7 @@ export default function TitlebarGridList() {
   return (
     <div className={classes.root}>
       <GridList cellHeight={180} className={classes.gridList}>
-        <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
+        <GridListTile key="Subheader" cols={2} style={{ height: "auto" }}>
           <ListSubheader component="div"></ListSubheader>
         </GridListTile>
         {tileData.map((tile) => (
@@ -41,16 +41,25 @@ export default function TitlebarGridList() {
               title={tile.title}
               subtitle={<span>{tile.info}</span>}
               actionIcon={
-                <IconButton aria-label={`info about ${tile.title}`} className={classes.icon}>
-                  <GitHubIcon />
-                </IconButton>
+                <a
+                  href={tile.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <IconButton
+                    aria-label={`info about ${tile.title}`}
+                    className={classes.icon}
+                  >
+                    <GitHubIcon />
+                  </IconButton>
+                </a>
               }
             />
           </GridListTile>
         ))}
       </GridList>
       <GridList cellHeight={180} className={classes.gridList}>
-        <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
+        <GridListTile key="Subheader" cols={2} style={{ height: "auto" }}>
           <ListSubheader component="div"></ListSubheader>
         </GridListTile>
         {tileDataCont.map((tile) => (
@@ -60,7 +69,10 @@ export default function TitlebarGridList() {
               title={tile.title}
               subtitle={<span>{tile.info}</span>}
               actionIcon={
-                <IconButton aria-label={`info about ${tile.title}`} className={classes.icon}>
+                <IconButton
+                  aria-label={`info about ${tile.title}`}
+                  className={classes.icon}
+                >
                   <GitHubIcon />
                 </IconButton>
               }

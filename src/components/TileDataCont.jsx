@@ -1,18 +1,21 @@
 const tileDataCont = [
   {
     img: "https://i.imgur.com/xJfzzge.png",
-    title: "Place Cage",
-    info: "Brad",
+    title: "Burger Slam",
+    info: "Handlebars, Express, MySQL",
+    github: 'https://github.com/bread-w/gt-node-express-handlebars-hw'
   },
   {
     img: "https://i.imgur.com/CJ7PBrw.png",
-    title: "Place Cage",
-    info: "Brad",
+    title: "Team Builder",
+    info: "OOP, CLI, Node, Inquirer",
+    github: 'https://github.com/bread-w/gt-oop-template-engine-hw'
   },
   {
     img: "https://i.imgur.com/dd9RLNC.png",
-    title: "Place Cage",
-    info: "Brad",
+    title: "Weather Tracker App",
+    info: "API, Javascript, CSS, HTML",
+    github: 'https://github.com/bread-w/gt-server-side-apis-hw'
   },
 ];
 
