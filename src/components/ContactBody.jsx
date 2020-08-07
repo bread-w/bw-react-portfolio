@@ -8,9 +8,10 @@ import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
+import Avatar from '@material-ui/core/Avatar';
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import Box from "@material-ui/core/Box";
 
 const theme = createMuiTheme({
   palette: {
@@ -31,7 +32,11 @@ const theme = createMuiTheme({
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 500,
+    maxWidth: 750,
+  },
+  large: {
+    width: theme.spacing(7),
+    height: theme.spacing(7),
   },
 });
 
@@ -40,34 +45,47 @@ export default function ImgMediaCard() {
 
   return (
     <ThemeProvider theme={theme}>
-    <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          alt=""
-          height="140"
-          image=""
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-      </CardActions>
-    </Card>
+      <Box m={2} width={750} mx="auto">
+        <Card className={classes.root}>
+          <CardActionArea>
+            <Avatar
+              alt="Brad Williams"
+              src="https://i.imgur.com/7pmQ7Ft.jpg"
+              className={classes.large}
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="h2">
+                James "Brad" Williams
+              </Typography>
+              <Typography variant="body2" component="p">
+                Please contact me via any of the options I've listed below. You
+                may also view my other qualifications on my LinkedIn page and
+                Resume by following the provided links in the navbar shown
+                above. Thank you for visiting my portfolio page and I look
+                forward to speaking soon! If you have an urgent matter, feel
+                free to contact me via email or on my cell.
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+            <Button size="large" color="primary">
+              <a
+                href="https://docs.google.com/document/d/1RcjhjXo1_0ogXtvjdYHrZ7U78nBEPwMM7ilpicaMSUg/edit"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View my Resume
+              </a>
+            </Button>
+            <Button size="large" color="primary">
+              <a href="mailto: jb.wms89@gmail.com">Email</a>
+            </Button>
+            <Button size="large" color="primary">
+              <a href="tel:+14043761524"> 404.376.1524</a>
+            </Button>
+          </CardActions>
+        </Card>
+      </Box>
     </ThemeProvider>
   );
 }

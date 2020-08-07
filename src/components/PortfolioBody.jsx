@@ -7,6 +7,7 @@ import ListSubheader from '@material-ui/core/ListSubheader';
 import IconButton from '@material-ui/core/IconButton';
 import GitHubIcon from "@material-ui/icons/GitHub";
 import tileData from './TileData';
+import tileDataCont from './TileDataCont';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -14,7 +15,6 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: 'wrap',
     justifyContent: 'space-around',
     overflow: 'hidden',
-    // backgroundColor: theme.palette.background.paper,
   },
   gridList: {
     width: 500,
@@ -35,6 +35,25 @@ export default function TitlebarGridList() {
           <ListSubheader component="div"></ListSubheader>
         </GridListTile>
         {tileData.map((tile) => (
+          <GridListTile key={tile.img}>
+            <img src={tile.img} alt={tile.title} />
+            <GridListTileBar
+              title={tile.title}
+              subtitle={<span>{tile.info}</span>}
+              actionIcon={
+                <IconButton aria-label={`info about ${tile.title}`} className={classes.icon}>
+                  <GitHubIcon />
+                </IconButton>
+              }
+            />
+          </GridListTile>
+        ))}
+      </GridList>
+      <GridList cellHeight={180} className={classes.gridList}>
+        <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
+          <ListSubheader component="div"></ListSubheader>
+        </GridListTile>
+        {tileDataCont.map((tile) => (
           <GridListTile key={tile.img}>
             <img src={tile.img} alt={tile.title} />
             <GridListTileBar
