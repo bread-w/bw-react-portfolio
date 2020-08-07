@@ -66,18 +66,26 @@ export default function ButtonAppBar() {
               </Link>
             </Typography>
             <div>
-              <Link to="https://github.com/bread-w">
+              <a
+                href="https://github.com/bread-w"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button className="buttonLink">
                   <GitHubIcon fontSize="large" />
                 </Button>
-              </Link>
+              </a>
             </div>
             <div>
-              <Link to="https://www.linkedin.com/in/brad-williams-79674253/">
+              <a
+                href="https://www.linkedin.com/in/brad-williams-79674253/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button className="buttonLink">
                   <LinkedInIcon fontSize="large" />
                 </Button>
-              </Link>
+              </a>
             </div>
           </Toolbar>
         </AppBar>
