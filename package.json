@@ -2,7 +2,7 @@
   "name": "bw-react-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://www.jbwilliams.me/",
+  "homepage": "https://bread-w.github.io/bw-react-portfolio/",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
