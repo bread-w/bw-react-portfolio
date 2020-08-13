@@ -57,7 +57,7 @@ export default function ImgMediaCard() {
               <Typography gutterBottom variant="h5" component="h2">
                 James "Brad" Williams
               </Typography>
-              <Typography variant="body2" component="p">
+              <Typography variant="body1" component="p">
                 Please contact me via any of the options I've listed below. You
                 may also view my other qualifications on my LinkedIn page and
                 Resume by following the provided links in the navbar shown

@@ -8,61 +8,41 @@ export default function SimpleContainer() {
     marginRight: "20px",
     width: "250px",
     height: "auto",
+    marginTop: "10px",
+    borderRadius: "5%",
   };
   return (
     <React.Fragment>
       <Container
         maxWidth="lg"
-        style={{ backgroundColor: "#37474f", marginTop: "20px" }}
+        style={{
+          backgroundColor: "#37474f",
+          marginTop: "20px",
+        }}
       >
         <img
           style={bioStyle}
           src="https://i.imgur.com/7pmQ7Ft.jpg"
           alt="Brad Williams"
         />
-        <Typography
-          variant="subtitle1"
-          component="subtitle1"
-          style={{ color: "white" }}
-        >
-          Hello there, and thanks for stopping by! My name is Brad Williams and
-          I was born and raised right here in Atlanta, Ga. I graduated from high
-          school in 2008, where I then went on to study Spanish at Auburn
-          University. War Eagle! After graduation, I taught Spanish for 2 years
-          in Atlanta, and then picked up my things and moved a few thousand
-          miles south to Santiago, Chile! While in Chile, I taught English to
-          both children and adults, improving both my Spanish language skills
-          and broadening my cultural perspective. While it was at times jarring,
-          I loved my time in Chile, the people I met and the experiences I
-          gained while living there. After a year, I decided to head back to the
-          U.S. where I would go on to work for Teach for America in Denver,
-          Colorado. In Denver, I taught math in an English as a second language
-          classroom to first generation hispanic immigrants.
-          <br />
-          <br />
-          In 2017, I decided that I no longer wanted to pursue a career in
-          teaching, mainly because of the sheer lack of financial growth
-          available for most long term teachers. I then moved back to Atlanta
-          and began working at a coworking startup, SharedSpace, at the peak of
-          the coworking bubble. I started as General Manager, and after bringing
-          a space to profitability, I then went on to open two more spaces, one
-          in Cobb County and another in Augusta, Ga. While working at
-          SharedSpace, I hosted a coding bootcamp, which sparked an interest in
-          coding that would stick with me until today. I worked for SharedSpace
-          for 2 years. While opening the SharedSpace location in Augusta, I was
-          approached about a position with a startup concept called Kefi, which
-          I decided to follow, yet again bringing me back to Atlanta. At Kefi, I
-          was very quickly promoted to manager, but as is the nature of
-          startups, it came with its own set of challenges, and ended up not
-          being the right fit for me.
-          <br />
-          <br />
-          I’m now working full time as a student at the Georgia Tech Coding
-          bootcamp following my dream of becoming a developer. While not coding,
-          I love to play video games, cook, watch movies, and spend time with my
-          girlfriend and pets. I love learning foreign languages and I speak
-          spanish at an advanced level, and I’m hoping to add a few coding
-          languages to my belt as well!
+        <Typography variant="h5" component="h6" style={{ color: "white", paddingTop: "10px" }}>
+          Full stack web developer with 4 years of managing small to medium
+          sized teams between 5 and 30+ members in a startup environment. Former
+          math teacher in an English as a second language classroom with vast
+          experience planning differentiated lessons and activities through
+          student data and achievement in both Spanish and English. Reliable,
+          consistent and amiable as both a teammate and leader, preferring an
+          action oriented approach in both professional and personal life.
+          Familiar with fast paced work environments, working with and managing
+          diverse and dynamic teams, and meeting deadlines with no sacrifice to
+          the final quality of deliverables, be it a product or service.
+          <br></br>
+          <br></br>
+          Certified in Full Stack Web Development through Georgia Tech, with a
+          primary focus in Javascript applications, REST APIs, Node, MySQL,
+          MongoDB and React. Once hired, easily integrates into existing teams
+          and quickly learns the established best practices with the necessary
+          developmental and project management tools.
         </Typography>
       </Container>
     </React.Fragment>
