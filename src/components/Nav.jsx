@@ -54,7 +54,7 @@ export default function ButtonAppBar() {
               Brad Williams
             </Typography>
             <Typography variant="h6" className={classes.title}>
-              <Link to="/bw-react-portfolio">
+              <Link to="/">
                 <Button style={navBar}>About</Button>
               </Link>
             </Typography>
