@@ -14,7 +14,7 @@ export default function SimpleContainer() {
   return (
     <React.Fragment>
       <Container
-        maxWidth="lg"
+        maxWidth="auto"
         style={{
           backgroundColor: "rgb(55,71,79, 0.75)",
           marginTop: "20px",

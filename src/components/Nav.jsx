@@ -47,7 +47,7 @@ export default function ButtonAppBar() {
   return (
     <ThemeProvider theme={theme}>
       <div>
-        <AppBar position="static" color="primary">
+        <AppBar position="relative" color="primary">
           <Toolbar>
             <Typography variant="h3" className={classes.title}>
               Brad Williams
