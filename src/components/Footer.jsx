@@ -16,6 +16,8 @@ const Footer = () => {
             backgroundColor: "#37474f",
             padding: "5px",
             borderRadius: "5%",
+            opacity: .5,
+            position: "relative"
           }}
         >
           © 2020 Brad Williams

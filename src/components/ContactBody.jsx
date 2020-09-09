@@ -70,7 +70,7 @@ export default function ImgMediaCard() {
           <CardActions>
             <Button size="large" color="primary">
               <a
-                href="https://docs.google.com/document/d/1RcjhjXo1_0ogXtvjdYHrZ7U78nBEPwMM7ilpicaMSUg/edit"
+                href="https://docs.google.com/document/d/1z5g5z8KkijgM7MXMcTTAsrx6WvvyD2njZetimYtuIr8/edit?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -78,7 +78,7 @@ export default function ImgMediaCard() {
               </a>
             </Button>
             <Button size="large" color="primary">
-              <a href="mailto: jb.wms89@gmail.com">Email</a>
+              <a href="mailto: jb.wms89@gmail.com">jb.wms89@gmail.com</a>
             </Button>
             <Button size="large" color="primary">
               <a href="tel:+14043761524"> 404.376.1524</a>

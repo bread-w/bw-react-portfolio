@@ -42,7 +42,6 @@ export default function ButtonAppBar() {
   const classes = useStyles();
   const navBar = {
     color: "white",
-    float: "right",
     textDecoration: "underline",
   };
   return (
