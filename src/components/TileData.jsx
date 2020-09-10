@@ -43,7 +43,7 @@ const tileData = [{
 {
   img: "https://i.imgur.com/dd9RLNC.png",
   title: "Weather Tracker App",
-  info: "Check out this custom weather app for daily weather and upcoming forecasts! Built using APIs, Javascript, CSS, and HTML.",
+  info: "A custom weather app for daily weather and upcoming forecasts! Built using APIs, Javascript, CSS, and HTML.",
   url: 'https://bread-w.github.io/gt-server-side-apis-hw/',
   github: 'https://github.com/bread-w/gt-server-side-apis-hw'
 },

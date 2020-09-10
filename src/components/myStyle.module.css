@@ -1,0 +1,115 @@
+.filler {
+  margin: 75px;
+}
+
+.portFiller {
+  margin: 25px;
+}
+
+.contactFiller{
+  margin: 75px;
+}
+
+@media only screen and (max-width: 600px) {
+  .filler {
+    margin: 120px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .portFiller {
+    margin: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contactFiller {
+    margin: 120px;
+  }
+}
+
+.bioStyle {
+  float: left;
+  margin-right: 20px;
+  width: 250px;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+  .bioStyle {
+    float: left;
+    margin-right: 20px;
+    width: 150px;
+    height: auto;
+  }
+}
+
+.bioText {
+  color: white;
+  padding-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .bioText {
+    font-size: 20px !important;
+  }
+}
+
+.container {
+  background-color: rgb(55, 71, 79, 0.75);
+  margin-top: 20px;
+  padding: 25;
+  border-radius: 1.5%;
+}
+
+.navBar {
+  background-color: rgb(183, 28, 28) !important;
+  position: static;
+  float: right !important;
+}
+
+.navBtn {
+  color: whitesmoke !important;
+}
+
+.gridListTile {
+  padding: 10px !important;
+  color: rgb(55, 71, 79) !important;
+}
+
+.gridListTileBar {
+  padding: 10px !important;
+  background-color: rgb(55, 71, 79) !important;
+}
+
+.snap {
+  height: 500px !important;
+  width: auto !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .snap {
+    height: 150px !important;
+    width: auto !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .snippet {
+ display: none !important;
+  }
+}
+
+.btmPadding{
+  margin: 50px !important;
+}
+
+.btmPortPadding{
+  margin: 20px !important;
+}
+
+.contact {}
+
+

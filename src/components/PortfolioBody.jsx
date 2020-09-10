@@ -8,6 +8,8 @@ import IconButton from "@material-ui/core/IconButton";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LanguageIcon from "@material-ui/icons/Language";
 import tileData from "./TileData";
+import Container from "@material-ui/core/Container";
+import styles from "./myStyle.module.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,17 +25,18 @@ export default function TitlebarGridList() {
 
   return (
     <div className={classes.root}>
-      <GridList cellHeight={450} style={{margin: 10}}>
+      <Container className={styles.portFiller}></Container>
+      <GridList cellHeight="auto" style={{margin: 10}}>
         <GridListTile key="Subheader" cols={2} style={{ height: "auto"}}>
           <ListSubheader component="div"></ListSubheader>
         </GridListTile>
         {tileData.map((tile) => (
-          <GridListTile key={tile.img} style={{padding: 10, color: "rgb(55,71,79)" }}>
-            <img src={tile.img} alt={tile.title} />
+          <GridListTile key={tile.img} className={styles.gridListTile}>
+            <img src={tile.img} alt={tile.title} className={styles.snap} />
             <GridListTileBar
               title={tile.title}
-              subtitle={<span>{tile.info}</span>}
-              style={{padding: 10, backgroundColor: "rgb(55,71,79)"}}
+              subtitle={<span className={styles.snippet}>{tile.info}</span>}
+              className={styles.gridListTileBar}
               actionIcon={
                 <IconButton
                   aria-label={`info about ${tile.title}`}
@@ -60,6 +63,7 @@ export default function TitlebarGridList() {
           </GridListTile>
         ))}
       </GridList>
+      <Container className={styles.btmPortPadding}></Container>
     </div>
   );
 }

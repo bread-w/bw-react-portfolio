@@ -1,9 +1,4 @@
 import React from "react";
-import {
-  makeStyles,
-  createMuiTheme,
-  ThemeProvider,
-} from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
@@ -12,41 +7,24 @@ import Avatar from '@material-ui/core/Avatar';
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
+import Container from "@material-ui/core/Container";
+import { makeStyles } from '@material-ui/core/styles';
+import styles from "./myStyle.module.css";
 
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      light: "#f05545",
-      main: "#b71c1c",
-      dark: "#7f0000",
-      contrastText: "#ffffff",
-    },
-    secondary: {
-      light: "#62727b",
-      main: "#37474f",
-      dark: "#102027",
-      contrastText: "#ffffff",
-    },
-  },
-});
-
-const useStyles = makeStyles({
-  root: {
-    maxWidth: 750,
-  },
+const useStyles = makeStyles((theme) => ({
   large: {
     width: theme.spacing(7),
     height: theme.spacing(7),
   },
-});
+}));
 
 export default function ImgMediaCard() {
   const classes = useStyles();
-
   return (
-    <ThemeProvider theme={theme}>
-      <Box m={2} width={750} mx="auto">
-        <Card className={classes.root}>
+    <>
+      <Container className={styles.contactFiller}></Container>
+      <Container maxWidth="sm" className={styles.contact}>
+        <Card>
           <CardActionArea>
             <Avatar
               alt="Brad Williams"
@@ -74,7 +52,7 @@ export default function ImgMediaCard() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                View my Resume
+               Resume
               </a>
             </Button>
             <Button size="large" color="primary">
@@ -85,7 +63,7 @@ export default function ImgMediaCard() {
             </Button>
           </CardActions>
         </Card>
-      </Box>
-    </ThemeProvider>
+      </Container>
+      </>
   );
 }
