@@ -34,7 +34,7 @@ export default function TitlebarGridList() {
           <GridListTile key={tile.img} className={styles.gridListTile}>
             <img src={tile.img} alt={tile.title} className={styles.snap} />
             <GridListTileBar
-              title={tile.title}
+              title={<span className={styles.project}>{tile.title}</span>}
               subtitle={<span className={styles.snippet}>{tile.info}</span>}
               className={styles.gridListTileBar}
               actionIcon={

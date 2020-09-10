@@ -50,15 +50,16 @@ export default function ImgMediaCard() {
                 href="https://docs.google.com/document/d/1z5g5z8KkijgM7MXMcTTAsrx6WvvyD2njZetimYtuIr8/edit?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
+                className={styles.contactMe}
               >
                Resume
               </a>
             </Button>
             <Button size="large">
-              <a href="mailto: jb.wms89@gmail.com">jb.wms89@gmail.com</a>
+              <a href="mailto: jb.wms89@gmail.com" className={styles.contactMe}>jb.wms89@gmail.com</a>
             </Button>
             <Button size="large">
-              <a href="tel:+14043761524"> 404.376.1524</a>
+              <a href="tel:+14043761524"  className={styles.contactMe}> 404.376.1524</a>
             </Button>
           </CardActions>
         </Card>

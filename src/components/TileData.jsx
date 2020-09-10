@@ -14,14 +14,14 @@ const tileData = [{
 },
 {
   img: 'https://i.imgur.com/1vcUHLl.png',
-  title: 'Google Books Search',
+  title: 'Books App',
   info: 'The ideal app for searching and saving your favorite books. Built using React, MERN Stack, and MongoDB.',
   url: 'https://bw-google-books.herokuapp.com/',
   github: 'https://github.com/bread-w/gt-react-google-books'
 },
 {
   img: 'https://i.imgur.com/zOghqES.png',
-  title: 'Employee Directory',
+  title: 'Staff Directory',
   info: 'This app works great for buildin a sample employee directory! Built using React, and MongoDB.',
   url: 'https://bread-w.github.io/gt-react-employee-directory/',
   github: 'https://github.com/bread-w/gt-react-employee-directory'
@@ -42,7 +42,7 @@ const tileData = [{
 },
 {
   img: "https://i.imgur.com/dd9RLNC.png",
-  title: "Weather Tracker App",
+  title: "Weather Tracker",
   info: "A custom weather app for daily weather and upcoming forecasts! Built using APIs, Javascript, CSS, and HTML.",
   url: 'https://bread-w.github.io/gt-server-side-apis-hw/',
   github: 'https://github.com/bread-w/gt-server-side-apis-hw'
