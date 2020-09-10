@@ -12,23 +12,25 @@ import styles from "./myStyle.module.css";
 export default function ButtonAppBar() {
   return (
     <AppBar className={styles.navBar}>
-      <Grid>
-        <Toolbar>
-          <Typography variant="h3" className={styles.bradW}>
-            Brad Williams
-          </Typography>
+      <Toolbar>
+        <Grid
+          justify="space-between" // Add it here :)
+          container
+          spacing={24}
+        >
+          <Link to="/" >
+            <Typography variant="h3" className={styles.bradW}>
+              Brad Williams
+            </Typography>
+          </Link>
+          <Typography variant="h6"></Typography>
           <Typography variant="h6">
-            <Link to="/">
-              <Button className={styles.navBtn}>About</Button>
-            </Link>
-          </Typography>
-          <Typography variant="h6">
-            <Link to="/Portfolio">
+            <Link to="/Portfolio" className={styles.navLink}>
               <Button className={styles.navBtn}>Portfolio</Button>
             </Link>
           </Typography>
           <Typography variant="h6">
-            <Link to="/Contact">
+            <Link to="/Contact" className={styles.navLink}>
               <Button className={styles.navBtn}>Contact</Button>
             </Link>
           </Typography>
@@ -54,8 +56,8 @@ export default function ButtonAppBar() {
               </Button>
             </a>
           </div>
-        </Toolbar>
-      </Grid>
+        </Grid>
+      </Toolbar>
     </AppBar>
   );
 }

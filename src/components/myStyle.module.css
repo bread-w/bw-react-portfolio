@@ -66,12 +66,45 @@
 
 .navBar {
   background-color: rgb(183, 28, 28) !important;
-  position: static;
-  float: right !important;
+}
+
+.bradW {
+  color: whitesmoke !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .bradW {
+    margin-right: 30px !important;
+  }
+}
+
+.bradW:hover {
+  text-decoration: underline !important;
+  text-decoration-color: whitesmoke !important;
 }
 
 .navBtn {
   color: whitesmoke !important;
+}
+
+.navLink {
+  border: whitesmoke !important;
+  border-style: solid !important;
+  vertical-align: -10px !important;
+  border-width: thin !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .navLink {
+    border: whitesmoke !important;
+  border-style: solid !important;
+  border-width: thin !important;
+  }
+}
+
+.navBtn:hover {
+  text-decoration: underline !important;
+  text-decoration-color: whitesmoke !important;
 }
 
 .gridListTile {
@@ -109,7 +142,4 @@
 .btmPortPadding{
   margin: 20px !important;
 }
-
-.contact {}
-
 

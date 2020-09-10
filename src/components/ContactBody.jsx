@@ -6,7 +6,6 @@ import CardContent from "@material-ui/core/CardContent";
 import Avatar from '@material-ui/core/Avatar';
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import Box from "@material-ui/core/Box";
 import Container from "@material-ui/core/Container";
 import { makeStyles } from '@material-ui/core/styles';
 import styles from "./myStyle.module.css";
@@ -23,7 +22,7 @@ export default function ImgMediaCard() {
   return (
     <>
       <Container className={styles.contactFiller}></Container>
-      <Container maxWidth="sm" className={styles.contact}>
+      <Container maxWidth="md">
         <Card>
           <CardActionArea>
             <Avatar
@@ -33,7 +32,7 @@ export default function ImgMediaCard() {
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
-                James "Brad" Williams
+                Brad Williams
               </Typography>
               <Typography variant="body1" component="p">
                 Please contact me via any of the options I've listed below. You
@@ -46,7 +45,7 @@ export default function ImgMediaCard() {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button size="large" color="primary">
+            <Button size="large" >
               <a
                 href="https://docs.google.com/document/d/1z5g5z8KkijgM7MXMcTTAsrx6WvvyD2njZetimYtuIr8/edit?usp=sharing"
                 target="_blank"
@@ -55,10 +54,10 @@ export default function ImgMediaCard() {
                Resume
               </a>
             </Button>
-            <Button size="large" color="primary">
+            <Button size="large">
               <a href="mailto: jb.wms89@gmail.com">jb.wms89@gmail.com</a>
             </Button>
-            <Button size="large" color="primary">
+            <Button size="large">
               <a href="tel:+14043761524"> 404.376.1524</a>
             </Button>
           </CardActions>
